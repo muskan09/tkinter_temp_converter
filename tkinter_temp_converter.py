@@ -36,7 +36,8 @@ ent_temp.insert(0,'0')
 lbl_left = tk.Label(text='\N{DEGREE FAHRENHEIT}', width=5)
 lbl_left.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
-btn = tk.Button(text="\N{RIGHTWARDS BLACK ARROW}", command=convert_temp)
+btn = tk.Button(text="\N{RIGHTWARDS BLACK ARROW}",bg='red', command=convert_temp)
+# changing the button background color to red to improve readibility
 btn.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
 lbl_temp = tk.Label(text='', width=10)
@@ -45,7 +46,8 @@ lbl_temp.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 lbl_right = tk.Label(text="\N{DEGREE CELSIUS}")
 lbl_right.pack(side=tk.LEFT,fill=tk.BOTH, expand=True)
 
-btn_reverse = tk.Button(text='\N{CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS}', command=reverse)
+btn_reverse = tk.Button(text='\N{CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS}',bg='cornflower blue', command=reverse)
+# changing the button background color to cornflower blue to improve readibility
 btn_reverse.pack(side=tk.LEFT,fill=tk.BOTH, padx=6, expand=True)
 
 window.mainloop()
